@@ -1,0 +1,90 @@
+{
+	"description": "A vehicle.",
+	"required": [
+		"name",
+		"model",
+		"manufacturer",
+		"cost_in_credits",
+		"length",
+		"max_atmosphering_speed",
+		"crew",
+		"passengers",
+		"cargo_capacity",
+		"consumables",
+		"vehicle_class",
+		"pilots",
+		"films",
+		"created",
+		"edited",
+		"url"
+	],
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"title": "Starship",
+	"properties": {
+		"model": {
+			"type": "string",
+			"description": "The model or official name of this vehicle. Such as All Terrain Attack Transport."
+		},
+		"cost_in_credits": {
+			"type": "string",
+			"description": "The cost of this vehicle new, in galactic credits."
+		},
+		"films": {
+			"type": "array",
+			"description": "An array of Film URL Resources that this vehicle has appeared in."
+		},
+		"url": {
+			"type": "string",
+			"description": "The hypermedia URL of this resource."
+		},
+		"manufacturer": {
+			"type": "string",
+			"description": "The manufacturer of this vehicle. Comma seperated if more than one."
+		},
+		"edited": {
+			"type": "string",
+			"description": "the ISO 8601 date format of the time that this resource was edited."
+		},
+		"consumables": {
+			"type": "string",
+			"description": "The maximum length of time that this vehicle can provide consumables for its entire crew without having to resupply."
+		},
+		"crew": {
+			"type": "string",
+			"description": "The number of personnel needed to run or pilot this vehicle."
+		},
+		"cargo_capacity": {
+			"type": "string",
+			"description": "The maximum number of kilograms that this vehicle can transport."
+		},
+		"created": {
+			"type": "string",
+			"description": "The ISO 8601 date format of the time that this resource was created."
+		},
+		"vehicle_class": {
+			"type": "string",
+			"description": "The class of this vehicle, such as Wheeled."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name of this vehicle. The common name, such as Sand Crawler."
+		},
+		"length": {
+			"type": "string",
+			"description": "The length of this vehicle in meters."
+		},
+		"max_atmosphering_speed": {
+			"type": "string",
+			"description": "The maximum speed of this vehicle in atmosphere."
+		},
+		"passengers": {
+			"type": "string",
+			"description": "The number of non-essential people this vehicle can transport."
+		},
+		"pilots": {
+			"type": "array",
+			"description": "An array of People URL Resources that this vehicle has been piloted by."
+		}
+	}
+}

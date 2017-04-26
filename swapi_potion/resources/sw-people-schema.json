@@ -1,0 +1,80 @@
+{
+	"description": "A person within the Star Wars universe",
+	"required": [
+		"name",
+		"height",
+		"mass",
+		"hair_color",
+		"skin_color",
+		"eye_color",
+		"birth_year",
+		"gender",
+		"homeworld",
+		"films",
+		"species",
+		"vehicles",
+		"starships",
+		"url"
+	],
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"title": "People",
+	"properties": {
+		"homeworld": {
+			"type": "string",
+			"description": "The url of the planet resource that this person was born on."
+		},
+		"mass": {
+			"type": "string",
+			"description": "The mass of this person in kilograms."
+		},
+		"url": {
+			"type": "string",
+			"description": "The url of this resource"
+		},
+		"height": {
+			"type": "string",
+			"description": "The height of this person in meters."
+		},
+		"birth_year": {
+			"type": "string",
+			"description": "The birth year of this person. BBY (Before the Battle of Yavin) or ABY (After the Battle of Yavin)."
+		},
+		"gender": {
+			"type": "string",
+			"description": "The gender of this person (if known)."
+		},
+		"hair_color": {
+			"type": "string",
+			"description": "The hair color of this person."
+		},
+		"films": {
+			"type": "array",
+			"description": "An array of urls of film resources that this person has been in."
+		},
+		"species": {
+			"type": "array",
+			"description": "The url of the species resource that this person is."
+		},
+		"eye_color": {
+			"type": "string",
+			"description": "The eye color of this person."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name of this person."
+		},
+		"starships": {
+			"type": "array",
+			"description": "An array of starship resources that this person has piloted"
+		},
+		"skin_color": {
+			"type": "string",
+			"description": "The skin color of this person."
+		},
+		"vehicles": {
+			"type": "array",
+			"description": "An array of vehicle resources that this person has piloted"
+		}
+	}
+}

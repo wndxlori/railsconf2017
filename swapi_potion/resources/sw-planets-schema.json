@@ -1,0 +1,80 @@
+{
+	"description": "A planet.",
+	"required": [
+		"name",
+		"rotation_period",
+		"orbital_period",
+		"diameter",
+		"climate",
+		"gravity",
+		"terrain",
+		"surface_water",
+		"population",
+		"residents",
+		"films",
+		"created",
+		"edited",
+		"url"
+	],
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"title": "Planet",
+	"properties": {
+		"population": {
+			"type": "string",
+			"description": "The average populationof sentient beings inhabiting this planet."
+		},
+		"residents": {
+			"type": "array",
+			"description": "An array of People URL Resources that live on this planet."
+		},
+		"terrain": {
+			"type": "string",
+			"description": "the terrain of this planet. Comma-seperated if diverse."
+		},
+		"diameter": {
+			"type": "string",
+			"description": "The diameter of this planet in kilometers."
+		},
+		"edited": {
+			"type": "string",
+			"description": "the ISO 8601 date format of the time that this resource was edited."
+		},
+		"surface_water": {
+			"type": "string",
+			"description": "The percentage of the planet surface that is naturally occuring water or bodies of water."
+		},
+		"rotation_period": {
+			"type": "string",
+			"description": "The number of standard hours it takes for this planet to complete a single rotation on its axis."
+		},
+		"created": {
+			"type": "string",
+			"description": "The ISO 8601 date format of the time that this resource was created."
+		},
+		"films": {
+			"type": "array",
+			"description": "An array of Film URL Resources that this planet has appeared in."
+		},
+		"orbital_period": {
+			"type": "string",
+			"description": "The number of standard days it takes for this planet to complete a single orbit of its local star."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name of this planet."
+		},
+		"url": {
+			"type": "string",
+			"description": "The hypermedia URL of this resource."
+		},
+		"gravity": {
+			"type": "string",
+			"description": "A number denoting the gravity of this planet. Where 1 is normal."
+		},
+		"climate": {
+			"type": "string",
+			"description": "The climate of this planet. Comma-seperated if diverse."
+		}
+	}
+}
