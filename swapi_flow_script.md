@@ -72,7 +72,7 @@ $ mkdir app/screens
 ```ruby
 class MainScreen < UI::Screen
   def on_load
-    navigation.title = "Star Wars - API”
+    navigation.title = "Star Wars - API"
   end
 end
 ```
@@ -158,7 +158,7 @@ list.on(:select) {|data| select_screen(data) }
 ```ruby
 def select_screen(data)
   case data
-    when ‘films'
+    when 'films'
       navigation.push(FilmsScreen.new)
   end
 end
@@ -190,7 +190,7 @@ class FilmRow < UI::ListRow
   
   def update(data)
     title_label.text = data['title']
-    director_label.text = "Directed by #{data['director']}”
+    director_label.text = "Directed by #{data['director']}"
   end
   
   def add_director_label
@@ -298,7 +298,7 @@ end
 - Fix the title in `FilmsScreen.on_load`
 
 ```ruby
- navigation.title = “Movies"
+ navigation.title = "Movies"
 ```
 
 Let's run super_repl and try that again.
@@ -317,7 +317,7 @@ end
 
 ```ruby
 def before_on_show
-  navigation.title = “Movies"
+  navigation.title = "Movies"
 end
 ```
 
